@@ -1,0 +1,19 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Manual do MultChat",
+  "description": "Guias em português para conectar canais, organizar equipes e atender clientes no MultChat.",
+  "colors": {
+    "primary": "#2563EB",
+    "light": "#93C5FD",
+    "dark": "#1D4ED8"
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Primeiros passos",
+        "pages": ["index"]
+      }
+    ]
+  }
+}

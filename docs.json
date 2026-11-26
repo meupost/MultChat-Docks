@@ -57,6 +57,8 @@
             "group": "Operação",
             "pages": [
               "conectar-whatsapp",
+              "multbridge",
+              "chatflow",
               "atender-conversas",
               "contatos",
               "organizar-equipe",
@@ -102,6 +104,8 @@
             "group": "Daily operations",
             "pages": [
               "en/conectar-whatsapp",
+              "en/multbridge",
+              "en/chatflow",
               "en/atender-conversas",
               "en/contatos",
               "en/organizar-equipe",

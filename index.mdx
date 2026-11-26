@@ -1,34 +1,37 @@
 ---
-title: "Do WhatsApp ao primeiro atendimento"
-sidebarTitle: "Primeiro atendimento"
-description: "Configure a equipe e a conexão do WhatsApp, envie uma mensagem de teste de outro número e responda ao primeiro atendimento pelo painel do MultChat."
+title: "Bem-vindo ao MultChat"
+sidebarTitle: "Início"
+description: "Conheça o MultChat, configure sua operação e encontre os guias de conexão, atendimento, automação e gestão para a sua equipe."
+icon: "house"
 ---
 
-Você pode testar o fluxo completo com dois números. Conecte o número da empresa ao MultChat e use o outro para simular uma mensagem de cliente.
+O MultChat reúne as conversas com clientes em um painel. Use o menu para localizar a área que você quer configurar ou usar.
 
-## Prepare a equipe
+## Comece pelo primeiro atendimento
 
-1. Abra **Departamentos** e selecione **Novo departamento**. Crie as filas que a equipe usa, como Comercial ou Suporte.
-2. Abra **Usuários**. Cadastre os atendentes ou revise os cadastros existentes.
-3. Confira o perfil e as filas de cada atendente. Use uma conta com as permissões correspondentes para configurar usuários, departamentos e conexões.
+<Card
+  className="multchat-featured"
+  title="Do WhatsApp ao primeiro atendimento"
+  icon="messages-square"
+  href="/primeiros-passos"
+  cta="Começar tutorial"
+>
+  Organize as filas, conecte seu número e responda a uma mensagem de teste.
+</Card>
 
-## Conecte o WhatsApp
+## Explore por área
 
-1. Abra **Conexões** e selecione **Nova conexão**.
-2. Escolha um tipo de conexão habilitado para a empresa.
-   - **WhatsApp por QR Code**. No WhatsApp do número da empresa, abra **Aparelhos conectados** e escaneie o código da tela do MultChat.
-   - **WhatsApp API Oficial**. Selecione o canal oficial e siga as etapas exibidas no MultChat para vincular o número.
-3. Abra os detalhes da conexão. Verifique se o canal está conectado e se as filas selecionadas correspondem à equipe que vai atender.
-
-## Receba e responda à mensagem de teste
-
-1. Envie uma mensagem de outro número para o WhatsApp da empresa.
-2. Abra **Atendimentos** e localize a conversa pelo contato.
-3. Se a conversa estiver aguardando, selecione **Aceitar**.
-4. Escreva uma resposta, envie e confirme se ela chegou ao número de teste.
-
-Use **Transferir atendimento** para encaminhar a conversa à fila ou ao atendente disponível. Quando o teste terminar, selecione **Resolver atendimento** e siga as instruções exibidas.
-
-## Se a conversa não aparecer
-
-Confira se a mensagem foi enviada para o número certo e se a conexão está ativa. Em **Atendimentos**, revise os filtros. Se você não tiver acesso à fila esperada, peça ao administrador para verificar as filas do seu usuário.
+<Columns cols={2}>
+  <Card title="Conexões" icon="plug" href="/conectar-whatsapp">
+    Canais de atendimento e status das conexões.
+  </Card>
+  <Card title="Atendimentos" icon="headphones" href="/atender-conversas">
+    Conversas, respostas e transferências.
+  </Card>
+  <Card title="Flow Builder" icon="workflow" href="/flow-builder">
+    Fluxos e automações de atendimento.
+  </Card>
+  <Card title="Agentes de IA" icon="bot" href="/agentes-de-ia">
+    Agentes e fontes de conhecimento.
+  </Card>
+</Columns>

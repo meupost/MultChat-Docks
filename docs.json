@@ -2,17 +2,133 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Manual do MultChat",
-  "description": "Guias em português para conectar canais, organizar equipes e atender clientes no MultChat.",
+  "description": "Manual para organizar a operação, conectar canais e atender clientes no MultChat.",
   "colors": {
-    "primary": "#2563EB",
-    "light": "#93C5FD",
-    "dark": "#1D4ED8"
+    "primary": "#2E7D32",
+    "light": "#91E2B4",
+    "dark": "#1B5E20"
+  },
+  "logo": {
+    "light": "/logo/multchat.png",
+    "dark": "/logo/multchat.png"
+  },
+  "favicon": "/logo/multchat-icon.png",
+  "appearance": {
+    "default": "dark"
+  },
+  "background": {
+    "color": {
+      "light": "#F8FCFA",
+      "dark": "#0C1513"
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "contextual": {
+    "options": [
+      "chatgpt",
+      "claude",
+      "copy"
+    ]
+  },
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/meupost/MultChat-Docks"
+    }
   },
   "navigation": {
-    "groups": [
+    "languages": [
       {
-        "group": "Primeiros passos",
-        "pages": ["index"]
+        "language": "pt",
+        "groups": [
+          {
+            "group": "Comece aqui",
+            "pages": [
+              "index",
+              "primeiros-passos"
+            ]
+          },
+          {
+            "group": "Operação",
+            "pages": [
+              "conectar-whatsapp",
+              "atender-conversas",
+              "contatos",
+              "organizar-equipe",
+              "respostas-rapidas",
+              "agendamentos",
+              "kanban"
+            ]
+          },
+          {
+            "group": "Automação e campanhas",
+            "pages": [
+              "flow-builder",
+              "agentes-de-ia",
+              "campanhas"
+            ]
+          },
+          {
+            "group": "Gestão",
+            "pages": [
+              "usuarios-e-permissoes",
+              "desempenho"
+            ]
+          },
+          {
+            "group": "Ajuda",
+            "pages": [
+              "problemas-comuns"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "Start here",
+            "pages": [
+              "en/index",
+              "en/primeiros-passos"
+            ]
+          },
+          {
+            "group": "Daily operations",
+            "pages": [
+              "en/conectar-whatsapp",
+              "en/atender-conversas",
+              "en/contatos",
+              "en/organizar-equipe",
+              "en/respostas-rapidas",
+              "en/agendamentos",
+              "en/kanban"
+            ]
+          },
+          {
+            "group": "Automation and campaigns",
+            "pages": [
+              "en/flow-builder",
+              "en/agentes-de-ia",
+              "en/campanhas"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "en/usuarios-e-permissoes",
+              "en/desempenho"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "en/problemas-comuns"
+            ]
+          }
+        ]
       }
     ]
   }

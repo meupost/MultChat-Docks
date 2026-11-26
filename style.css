@@ -1,0 +1,87 @@
+[data-layout-item="topbar"] img[src*="/logo/multchat.png"],
+[data-layout-item="mobile-nav"] img[src*="/logo/multchat.png"] {
+  box-sizing: content-box;
+  padding: 0.3125rem 0.5rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+}
+
+#content .multchat-featured {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-color: #34705b;
+  background:
+    radial-gradient(ellipse at 96% 0%, #246651, transparent 65%),
+    linear-gradient(130deg, #102a24, #163b31);
+}
+
+#content .multchat-featured [data-component-part="card-content-container"] {
+  padding-right: clamp(5.25rem, 17vw, 8.75rem);
+}
+
+#content .multchat-featured::before {
+  position: absolute;
+  top: 50%;
+  right: clamp(0.75rem, 4vw, 1.75rem);
+  width: clamp(3.75rem, 9vw, 6rem);
+  aspect-ratio: 1;
+  transform: translateY(-50%) rotate(-8deg);
+  border: 1px solid #9be0bd;
+  border-radius: 27%;
+  background: #e4f6eb url("/logo/multchat-icon.png") center / 72% no-repeat;
+  box-shadow: 0 0.75rem 1.75rem rgb(5 24 18 / 35%);
+  pointer-events: none;
+  content: "";
+}
+
+#content .multchat-featured::after {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background:
+    repeating-radial-gradient(
+      circle at 88% 50%,
+      transparent 0 23px,
+      rgb(161 232 197 / 17%) 24px 25px,
+      transparent 26px 38px
+    );
+  mask-image: linear-gradient(90deg, transparent 45%, black);
+  pointer-events: none;
+  content: "";
+}
+
+#content .multchat-featured [data-component-part="card-title"] {
+  margin-top: 0.625rem;
+  color: #f5fff9;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+#content .multchat-featured [data-component-part="card-content"] {
+  max-width: 25rem;
+  color: #daede4;
+}
+
+#content .multchat-featured [data-component-part="card-icon"] svg {
+  background-color: #91e2b4;
+}
+
+#content .multchat-featured [data-component-part="card-cta"] {
+  margin-top: 0.875rem;
+}
+
+#content .multchat-featured [data-component-part="card-cta"] button {
+  color: #b4f4ce;
+}
+
+#content .multchat-featured:hover,
+#content .multchat-featured:focus-visible {
+  border-color: #91e2b4;
+}
+
+@media (max-width: 640px) {
+  #content .multchat-featured::after {
+    opacity: 0.45;
+  }
+}

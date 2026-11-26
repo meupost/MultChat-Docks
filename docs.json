@@ -2,7 +2,23 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Manual do MultChat",
-  "description": "Manual para organizar a operação, conectar canais e atender clientes no MultChat.",
+  "description": "Manuais do MultChat para organizar o atendimento pelo WhatsApp em equipe, configurar filas e agentes de IA e acompanhar vendas no Kanban.",
+  "seo": {
+    "organization": {
+      "id": "https://www.multchat.net/#organization",
+      "name": "MultChat",
+      "url": "https://www.multchat.net/",
+      "logo": "https://manual.multchat.net/logo/multchat.png",
+      "sameAs": ["https://www.youtube.com/meupost"]
+    }
+  },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": "Página não encontrada no Manual do MultChat",
+      "description": "Este endereço pode ter mudado. Volte ao [início do manual](/), abra [Primeiros passos](/primeiros-passos) ou siga para o [guia de Atendimentos](/atender-conversas).\n\nLooking for a guide in English? [Open the English manual](/en)."
+    }
+  },
   "colors": {
     "primary": "#12802F",
     "light": "#2BC54E",
@@ -18,6 +34,11 @@
   "favicon": "/logo/multchat-icon.png",
   "appearance": {
     "default": "dark"
+  },
+  "thumbnails": {
+    "preset": "classic",
+    "appearance": "light",
+    "surface": "brand"
   },
   "background": {
     "decoration": "gradient",
@@ -51,7 +72,8 @@
             "group": "Comece aqui",
             "pages": [
               "index",
-              "primeiros-passos"
+              "primeiros-passos",
+              "whatsapp-em-equipe"
             ]
           },
           {
@@ -133,7 +155,8 @@
             "group": "Start here",
             "pages": [
               "en/index",
-              "en/primeiros-passos"
+              "en/primeiros-passos",
+              "en/whatsapp-em-equipe"
             ]
           },
           {

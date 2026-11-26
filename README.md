@@ -26,6 +26,7 @@ Se você está configurando o MultChat pela primeira vez, comece por **Primeiros
 | Guia | O que você vai fazer | Acesso |
 | --- | --- | --- |
 | **Primeiros passos** | Preparar suas filas, conectar um número e testar o primeiro atendimento. | [PT](https://manual.multchat.net/primeiros-passos) · [EN](https://manual.multchat.net/en/primeiros-passos) |
+| **WhatsApp em equipe** | Organizar filas e distribuir conversas entre vários atendentes, com um cenário de teste e acesso a vendas. | [PT](https://manual.multchat.net/whatsapp-em-equipe) · [EN](https://manual.multchat.net/en/whatsapp-em-equipe) |
 | **Departamentos** | Criar filas, adicionar atendentes e encaminhar conversas para a equipe certa. | [PT](https://manual.multchat.net/organizar-equipe) · [EN](https://manual.multchat.net/en/organizar-equipe) |
 | **Atendimentos** | Aceitar, responder, transferir e resolver uma conversa, também no celular. | [PT](https://manual.multchat.net/atender-conversas) · [EN](https://manual.multchat.net/en/atender-conversas) |
 | **Construtor de fluxo** | Montar um menu, coletar respostas e simular antes de vincular ao WhatsApp. | [PT](https://manual.multchat.net/flow-builder) · [EN](https://manual.multchat.net/en/flow-builder) |

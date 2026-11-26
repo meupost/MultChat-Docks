@@ -1,29 +1,76 @@
 ---
 title: "How to set up team support on WhatsApp"
 sidebarTitle: "Team support on WhatsApp"
-description: "Set up WhatsApp support for multiple agents in MultChat. Create queues, route conversations, and test a handoff from your first connected number."
+description: "Set up WhatsApp support for multiple agents in MultChat. Route and answer conversations, transfer them between agents, and transcribe voice messages."
 icon: "users"
 "og:title": "Team support on WhatsApp | MultChat"
 ---
 
 import { PageFeedback } from "/snippets/page-feedback.jsx";
 
-When several agents use the same number, each conversation needs a clear owner and destination. MultChat lets you organize WhatsApp support in queues, see who took a conversation, and hand it off while keeping the conversation history available to the team.
+In MultChat, several agents can handle messages from the same WhatsApp number. Each conversation can have a queue and an owner. You can transfer a conversation with its history and, when transcription is enabled, read a voice message as text in the same thread.
 
-**Evaluating MultChat?** Tell us how many agents you have and where customers contact you. [Contact sales on WhatsApp](https://wa.me/5569981028003?text=Hi!%20I%20came%20from%20the%20MultChat%20manual%20and%20would%20like%20to%20learn%20about%20team%20support%20on%20WhatsApp.).
+[Transfer a conversation](#transfer-to-another-agent-or-queue) · [Transcribe a voice message](#transcribe-a-voice-message) · [Resolve a conversation](#resolve-and-review-the-outcome)
 
-## Set up a test workflow
+## Set up your team and connect the number
 
-Start with a simple example. **Doce Pote Confeitaria**, the fictional bakery from the tutorials, receives quote and delivery questions. The team creates **Sales** and **Support** queues and runs this test.
+The fictional bakery **Doce Pote Confeitaria** has two queues. **Sales** answers questions about the menu and prices. **Orders** handles orders and pickups.
 
-1. **Decide who handles each topic.** Create the [Sales and Support departments](/en/organizar-equipe) and add agents to their queues.
-2. **Connect a number and test an incoming message.** Follow [First steps](/en/primeiros-passos). Send a message from a second number and check where it appears.
-3. **Accept, reply, and hand it off.** In [Conversations](/en/atender-conversas), accept the conversation, send a quote, and hand it off to **Support** when the customer asks about delivery. Check the queue, owner, and history.
-4. **Close the conversation and review the outcome.** Resolve the conversation and record its outcome when classification is available. Then review the metrics in [Performance](/en/desempenho).
+1. Open **Automation and AI → Departments → New department**. Create the queues your team needs.
+2. Open each department, choose **Team → Add agents**, select the people who will handle that queue, and save your changes.
+3. Open **Connections → New connection** and connect the number by **QR code** or through the **Official API**, depending on the options available to your company. [See how to connect the number](/en/primeiros-passos#connect-whatsapp).
+4. Open the department's **Connections** tab and link the queue to the number. If MultChat prompts for a connection greeting, enter it and check the menu preview.
+5. In **Users → Roles**, check who can view conversations in their own queue and who can transfer them. Check that each person belongs to the department they will work in.
+
+With the default chatbot and one linked department, customers go straight to that queue. With multiple linked departments, they can choose one from the menu. If the connection uses an active flow, check which queue each option routes to. [See how to set up the menu and permissions](/en/organizar-equipe).
+
+## Receive and reply to the first conversation
+
+1. Send a message from a second number to the connected WhatsApp number. If the menu appears, choose **Orders**.
+2. Open **Conversations → Waiting** (**Aguardando**). Search by name or number, check the queue on the conversation card, and click **Accept** (**Aceitar**).
+3. Open the thread under **In progress** (**Atendendo**). Read the history, write a reply, and send it. To send the bakery's menu, for example, choose **+ → Photos and videos**.
+4. Check the second number to make sure the reply arrived. If you use **Official WhatsApp**, check the timer in the conversation header. When the 24-hour window has ended and free-text replies are unavailable, use an [approved template](/en/templates-whatsapp) to resume contact.
 
 <Frame caption="In the demo, the team accepts the conversation and sends a menu in the same thread.">
   <img src="/images/atendimentos/conversa.webp" alt="Doce Pote conversation with message history, a menu image, and a voice reply in MultChat" loading="lazy" />
 </Frame>
+
+## Transfer to another agent or queue
+
+Transfer a conversation when another agent or department needs to take over. For example, **Sales** can hand off a customer's order to **Orders** after sending the menu.
+
+1. Open the conversation under **In progress** and click the two arrows in the header, **Transfer conversation** (**Transferir Atendimento**).
+2. Under **Destination agent** (**Usuário de Destino**), choose who will continue the conversation. Under **Queue** (**Fila de Atendimento**), choose the new queue if the department is changing. To let an agent in that queue pick it up later, choose **No agent** (**Sem atendente**) and select the queue.
+3. If you also need to switch the number used for support, use **Connection** (**Conexão**) when your permissions and the available connections allow it.
+4. Click **Transfer** (**Transferir**). When you choose an agent, the conversation goes to that person. When you choose only a queue, it goes to **Waiting** in the selected queue so someone with access can accept it.
+5. Check the transfer card in the history. The person taking over can review earlier messages according to their access.
+
+<Frame caption="Choose the destination agent, queue, and connection when available.">
+  <img src="/images/atendimentos/transferir.webp" alt="Transfer dialog with destination agent, queue, and connection fields" loading="lazy" />
+</Frame>
+
+If MultChat asks you to unpin the conversation first, unpin it and try again. To send it back to its current queue, open **⋯ → Return to queue** (**Devolver à fila**) in the header. [See more conversation actions](/en/atender-conversas#use-the-conversation-header).
+
+## Transcribe a voice message
+
+1. Open the conversation and find the voice message. On a computer, hover over the recording and click the down arrow to open **the message options**. On a phone, press and hold the message.
+2. Choose **Transcribe** (**Transcrever**) and wait for the text to appear alongside the audio. If the message already has a transcript, click **Transcript** (**Transcrição**) to show or collapse the text.
+3. Use the transcript to find what the customer asked for. Listen to the original recording to confirm details such as an address, quantity, time, or price before you reply.
+
+The transcript stays in the conversation history. To reply to the customer, write and send a message from the composer.
+
+**If the option is missing**, check that you opened the menu for a voice message and ask an administrator to check **Audio transcription** under **AI features**. The feature needs to be enabled with a processing option configured. If transcription fails, check that the audio is available and contains audible speech, then select **Try again**. [See how to set up transcription](/en/atender-conversas#set-up-audio-transcription).
+
+## Resolve and review the outcome
+
+1. Select **Resolve** (**Resolver**) in the header.
+2. If the connection asks you to classify the outcome, choose a result such as **Sale completed** or **Awaiting payment**. Enter the value where applicable.
+3. Check whether the connection will send a closing message or survey, then confirm.
+4. Use **⋯ → Resolved** in the conversation list to find it later. Check recorded outcomes in [Performance](/en/desempenho).
+
+## Find a conversation that left the list
+
+Check **In progress** and **Waiting** and clear any queue, agent, or tag filters. A transfer can change the queue, the owner, and who can view the thread. Use **Global search** or **Resolved** if your role has access. If the conversation never appeared, check that the message reached the connected number and confirm you belong to the queue that receives it.
 
 ## Choose what to set up next
 

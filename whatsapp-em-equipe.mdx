@@ -1,29 +1,76 @@
 ---
 title: "Atendimento pelo WhatsApp em equipe"
 sidebarTitle: "WhatsApp em equipe"
-description: "Veja como organizar o atendimento pelo WhatsApp com vários atendentes no MultChat. Monte filas, distribua conversas e teste o primeiro atendimento."
+description: "Organize filas para vários atendentes no MultChat, receba e responda conversas do WhatsApp, transfira atendimentos e transcreva mensagens de áudio."
 icon: "users"
 "og:title": "Atendimento pelo WhatsApp em equipe | MultChat"
 ---
 
 import { PageFeedback } from "/snippets/page-feedback.jsx";
 
-Quando várias pessoas atendem pelo mesmo número, cada conversa precisa de um destino e de um responsável. No MultChat, você organiza o atendimento pelo WhatsApp em filas, acompanha quem assumiu cada conversa e transfere o atendimento com o histórico disponível para a equipe.
+No MultChat, várias pessoas podem atender pelo mesmo número de WhatsApp. Cada conversa pode ter uma fila e um responsável. Você pode transferir a conversa com o histórico e, com o recurso habilitado, converter uma mensagem de voz em texto no próprio atendimento.
 
-**Está avaliando o MultChat?** Conte quantas pessoas atendem hoje e como os pedidos chegam. [Fale com vendas pelo WhatsApp](https://wa.me/5569981028003?text=Ol%C3%A1!%20Vim%20pelo%20manual%20do%20MultChat%20e%20quero%20conhecer%20o%20atendimento%20em%20equipe%20pelo%20WhatsApp.).
+[Transferir atendimento](#transfira-para-outra-pessoa-ou-fila) · [Transcrever áudio](#transcreva-uma-mensagem-de-áudio) · [Resolver atendimento](#resolva-e-consulte-o-resultado)
 
-## Monte uma operação de teste
+## Prepare a equipe e conecte o número
 
-Use um exemplo simples. A **Doce Pote Confeitaria**, empresa fictícia dos tutoriais, recebe perguntas sobre orçamento e entrega. A equipe cria as filas **Vendas** e **Suporte** e faz o seguinte teste.
+No exemplo dos tutoriais, a **Doce Pote Confeitaria** tem duas filas. **Vendas** responde sobre cardápio e preços. **Encomendas** cuida dos pedidos e da retirada.
 
-1. **Defina quem atende cada assunto.** Crie os [departamentos Vendas e Suporte](/organizar-equipe) e adicione os atendentes a suas filas.
-2. **Conecte o número e teste a entrada.** Siga [Primeiros passos para conectar o WhatsApp](/primeiros-passos#conecte-o-whatsapp). De outro número, envie uma mensagem e confirme onde ela aparece.
-3. **Aceite, responda e transfira.** Em [Atendimentos](/atender-conversas), aceite a conversa, responda com o orçamento e transfira para **Suporte** se a dúvida passar a ser sobre entrega. Confira a fila, o responsável e o histórico.
-4. **Encerre e confira o resultado.** Use **Resolver** e registre o resultado quando a classificação estiver disponível. Depois, confira os indicadores em [Desempenho](/desempenho).
+1. Abra **Automação e IA → Departamentos → Novo departamento**. Crie as filas que sua empresa usa.
+2. Abra cada departamento, selecione **Equipe → Adicionar atendentes**, escolha as pessoas e salve as alterações.
+3. Abra **Conexões → Nova conexão** e conecte o número por **QR Code** ou **API Oficial**, conforme a opção habilitada para a empresa. [Veja como conectar o número](/primeiros-passos#conecte-o-whatsapp).
+4. Na aba **Conexões** de cada departamento, vincule a fila ao número. Se o painel pedir a **Saudação da conexão**, preencha e confira a prévia do menu.
+5. Em **Usuários → Cargos**, confira quem pode ver os atendimentos da própria fila e quem pode transferir. Confira também se cada pessoa está vinculada ao departamento que deve atender.
+
+Com o chatbot padrão e um único departamento vinculado, o cliente segue direto para essa fila. Com mais de um, ele pode escolher no menu. Se a conexão usa um fluxo ativo, confira para qual fila cada opção encaminha. [Veja como configurar o menu e as permissões](/organizar-equipe).
+
+## Receba e responda à primeira conversa
+
+1. Envie uma mensagem de outro número para o WhatsApp conectado. Se o menu aparecer, escolha **Encomendas**.
+2. Abra **Atendimento → Atendimentos → Aguardando**. Busque pelo nome ou número, confira a fila no cartão e clique em **Aceitar**.
+3. Abra a conversa em **Atendendo**. Leia o histórico, escreva sua resposta e envie. Para enviar o cardápio da Doce Pote, por exemplo, use **+ → Fotos e vídeos**.
+4. Confira no segundo número se a mensagem chegou. Se estiver usando o **WhatsApp Oficial**, veja o contador no cabeçalho. Quando a janela de 24 horas estiver encerrada e o campo bloquear texto livre, use um [modelo aprovado](/templates-whatsapp) para retomar o contato.
 
 <Frame caption="Na demonstração, a equipe aceita a conversa e envia o cardápio no mesmo atendimento.">
   <img src="/images/atendimentos/conversa.webp" alt="Conversa da Doce Pote com histórico, foto do cardápio e mensagem de áudio no painel de Atendimentos" loading="lazy" />
 </Frame>
+
+## Transfira para outra pessoa ou fila
+
+Use a transferência quando a conversa precisar seguir com outro atendente ou departamento. Por exemplo, depois de enviar o cardápio, **Vendas** pode passar um pedido para **Encomendas**.
+
+1. Abra a conversa em **Atendendo** e clique no ícone de duas setas no cabeçalho, **Transferir Atendimento**.
+2. Em **Usuário de Destino**, escolha quem vai continuar a conversa. Em **Fila de Atendimento**, selecione a fila de destino se precisar mudar de departamento. Para deixar alguém da fila assumir depois, escolha **Sem atendente** e selecione a fila.
+3. Se estiver mudando também o número de atendimento, use **Conexão** quando a sua permissão e as conexões disponíveis permitirem essa transferência.
+4. Clique em **Transferir**. Quando você escolhe uma pessoa, o atendimento segue para ela. Quando escolhe apenas a fila, a conversa volta a **Aguardando** nessa fila para que alguém com acesso possa aceitá-la.
+5. Confirme a transferência pelo cartão **Atendimento transferido** no histórico. A pessoa que recebe a conversa pode consultar as mensagens anteriores conforme seu acesso.
+
+<Frame caption="Escolha o atendente, a fila e, quando disponível, a conexão de destino.">
+  <img src="/images/atendimentos/transferir.webp" alt="Janela Transferir Atendimento com os campos Usuário de Destino, Fila de Atendimento e Conexão" loading="lazy" />
+</Frame>
+
+Se o painel pedir para desafixar a conversa, remova a fixação e tente de novo. Para devolver a conversa à espera da própria fila, use **⋯ → Devolver à fila** no cabeçalho. [Veja mais ações do atendimento](/atender-conversas#use-as-ações-do-cabeçalho).
+
+## Transcreva uma mensagem de áudio
+
+1. Abra a conversa e localize a mensagem de voz. No computador, passe o mouse sobre o áudio e clique na seta para baixo que abre **as opções da mensagem**. No celular, toque e segure a mensagem.
+2. Selecione **Transcrever** e aguarde. O painel mostra o texto junto do áudio. Se a mensagem já tiver sido transcrita, clique em **Transcrição** para abrir ou recolher o texto.
+3. Use o texto para localizar o que o cliente pediu. Ouça o trecho original para confirmar informações como endereço, quantidade, horário ou valor antes de responder.
+
+A transcrição fica no histórico do atendimento. Para responder ao cliente, escreva e envie uma mensagem pelo campo de resposta.
+
+**Se a opção não aparecer**, verifique se você abriu o menu de uma mensagem de áudio e peça a um administrador para conferir **Transcrição de áudio** na seção **Recursos de IA**. O recurso precisa estar ativo e ter uma opção de processamento configurada. Se aparecer **Não foi possível transcrever**, confirme se o áudio está disponível, se há fala audível e use **Tentar de novo**. [Veja como configurar a transcrição](/atender-conversas#configure-a-transcrição-de-áudio).
+
+## Resolva e consulte o resultado
+
+1. Quando terminar, clique em **Resolver** no cabeçalho.
+2. Se a conexão pedir uma classificação, escolha o resultado, como **Venda realizada** ou **Aguardando pagamento**. Informe o valor quando for aplicável.
+3. Revise em **Ao finalizar** se há mensagem de despedida ou pesquisa de satisfação e clique em **Finalizar**.
+4. Use **⋯ → Resolvidos** na lista para localizar a conversa depois. Os resultados registrados aparecem em [Desempenho → Perdas e conversões](/desempenho).
+
+## Encontre uma conversa que saiu da lista
+
+Confira **Atendendo** e **Aguardando** e limpe os filtros de fila, atendente ou etiquetas. Uma transferência pode mudar a fila, o responsável e quem consegue ver a conversa. Use **Busca geral** ou **Resolvidos**, conforme seu acesso. Se ela nunca apareceu, verifique se a mensagem chegou ao número conectado e confirme seu vínculo com a fila que recebe as mensagens.
 
 ## Escolha o próximo passo
 

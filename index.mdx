@@ -5,6 +5,8 @@ description: "Conheça o MultChat, configure sua operação e encontre os guias 
 icon: "house"
 ---
 
+import { PageFeedback } from "/snippets/page-feedback.jsx";
+
 O MultChat reúne as conversas com clientes em um painel. Use o menu para localizar a área que você quer configurar ou usar.
 
 ## Comece pelo primeiro atendimento
@@ -22,8 +24,8 @@ O MultChat reúne as conversas com clientes em um painel. Use o menu para locali
 ## Explore por área
 
 <Columns cols={2}>
-  <Card title="Conexões" icon="plug" href="/conectar-whatsapp">
-    Canais de atendimento e status das conexões.
+  <Card title="Departamentos" icon="network" href="/organizar-equipe">
+    Tutorial completo para organizar filas e encaminhar conversas à equipe certa.
   </Card>
   <Card title="Atendimentos" icon="headphones" href="/atender-conversas">
     Conversas, respostas e transferências.
@@ -35,3 +37,5 @@ O MultChat reúne as conversas com clientes em um painel. Use o menu para locali
     Agentes e fontes de conhecimento.
   </Card>
 </Columns>
+
+<PageFeedback title="Início" path="index" />

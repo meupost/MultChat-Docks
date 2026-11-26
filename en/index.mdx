@@ -5,6 +5,8 @@ description: "Get to know MultChat, set up your team, and find the right guide f
 icon: "house"
 ---
 
+import { PageFeedback } from "/snippets/page-feedback.jsx";
+
 MultChat brings customer conversations into one dashboard. Use the sidebar to find the feature you want to set up or use.
 
 ## Start with your first conversation
@@ -22,8 +24,8 @@ MultChat brings customer conversations into one dashboard. Use the sidebar to fi
 ## Explore by area
 
 <Columns cols={2}>
-  <Card title="Connections" icon="plug" href="/en/conectar-whatsapp">
-    Customer channels and connection status.
+  <Card title="Departments" icon="network" href="/en/organizar-equipe">
+    Follow the complete tutorial to organize queues and route conversations to the right team.
   </Card>
   <Card title="Conversations" icon="headphones" href="/en/atender-conversas">
     Customer conversations, replies, and transfers.
@@ -35,3 +37,5 @@ MultChat brings customer conversations into one dashboard. Use the sidebar to fi
     AI agents and their knowledge sources.
   </Card>
 </Columns>
+
+<PageFeedback title="Home" path="en/index" language="en" />

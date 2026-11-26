@@ -4,9 +4,12 @@
   "name": "Manual do MultChat",
   "description": "Manual para organizar a operação, conectar canais e atender clientes no MultChat.",
   "colors": {
-    "primary": "#2E7D32",
-    "light": "#91E2B4",
-    "dark": "#1B5E20"
+    "primary": "#12802F",
+    "light": "#2BC54E",
+    "dark": "#16A338"
+  },
+  "metadata": {
+    "timestamp": true
   },
   "logo": {
     "light": "/logo/multchat.png",

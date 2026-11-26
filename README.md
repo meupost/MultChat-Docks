@@ -12,6 +12,7 @@
     <strong><a href="https://manual.multchat.net/">Abrir o manual</a></strong>
     · <a href="https://manual.multchat.net/en">Read in English</a>
     · <a href="#tutoriais">Ver tutoriais</a>
+    · <a href="#contato">Contato</a>
     · <a href="#como-contribuir">Como contribuir</a>
   </p>
 </div>
@@ -35,6 +36,11 @@ Se você está configurando o MultChat pela primeira vez, comece por **Primeiros
 | **Desempenho** | Conferir os indicadores de equipe, avaliações, Score IA e conversão. | [PT](https://manual.multchat.net/desempenho) · [EN](https://manual.multchat.net/en/desempenho) |
 
 O menu do portal acompanha as áreas do MultChat. As páginas marcadas como **em preparação** indicam onde os próximos guias entrarão.
+
+## Contato
+
+- **Vendas e suporte** · [WhatsApp +55 (69) 98102-8003](https://wa.me/5569981028003)
+- **Tutoriais em vídeo** · [Canal Meupost no YouTube](https://www.youtube.com/meupost)
 
 ## Do GitHub ao manual
 

@@ -20,9 +20,10 @@
     "default": "dark"
   },
   "background": {
+    "decoration": "gradient",
     "color": {
       "light": "#F8FCFA",
-      "dark": "#0C1513"
+      "dark": "#0C1210"
     }
   },
   "icons": {
@@ -54,32 +55,67 @@
             ]
           },
           {
-            "group": "Operação",
+            "group": "Visão Geral",
             "pages": [
-              "conectar-whatsapp",
-              "multbridge",
-              "chatflow",
-              "atender-conversas",
-              "contatos",
-              "organizar-equipe",
-              "respostas-rapidas",
-              "agendamentos",
-              "kanban"
+              "dashboard",
+              "modulos",
+              "monitor-atendimentos",
+              "desempenho"
             ]
           },
           {
-            "group": "Automação e campanhas",
+            "group": "Atendimento",
+            "pages": [
+              "atender-conversas",
+              "contatos",
+              "email",
+              "chat-interno",
+              "agendamentos",
+              "agenda-comercial"
+            ]
+          },
+          {
+            "group": "Vendas e Produtividade",
+            "pages": [
+              "kanban",
+              "orcamentos",
+              "mercado-livre"
+            ]
+          },
+          {
+            "group": "Automação e IA",
             "pages": [
               "flow-builder",
               "agentes-de-ia",
-              "campanhas"
+              "organizar-equipe",
+              "respostas-rapidas"
+            ]
+          },
+          {
+            "group": "Marketing",
+            "pages": [
+              "campanhas",
+              "templates-whatsapp",
+              "instagram",
+              "informativos",
+              "tags"
             ]
           },
           {
             "group": "Gestão",
             "pages": [
               "usuarios-e-permissoes",
-              "desempenho"
+              "avaliacoes",
+              "financeiro"
+            ]
+          },
+          {
+            "group": "Administração e Sistema",
+            "pages": [
+              "conectar-whatsapp",
+              "multbridge",
+              "chatflow",
+              "configuracoes"
             ]
           },
           {
@@ -101,32 +137,67 @@
             ]
           },
           {
-            "group": "Daily operations",
+            "group": "Overview",
+            "pages": [
+              "en/dashboard",
+              "en/modulos",
+              "en/monitor-atendimentos",
+              "en/desempenho"
+            ]
+          },
+          {
+            "group": "Customer support",
+            "pages": [
+              "en/atender-conversas",
+              "en/contatos",
+              "en/email",
+              "en/chat-interno",
+              "en/agendamentos",
+              "en/agenda-comercial"
+            ]
+          },
+          {
+            "group": "Sales and productivity",
+            "pages": [
+              "en/kanban",
+              "en/orcamentos",
+              "en/mercado-livre"
+            ]
+          },
+          {
+            "group": "Automation and AI",
+            "pages": [
+              "en/flow-builder",
+              "en/agentes-de-ia",
+              "en/organizar-equipe",
+              "en/respostas-rapidas"
+            ]
+          },
+          {
+            "group": "Marketing",
+            "pages": [
+              "en/campanhas",
+              "en/templates-whatsapp",
+              "en/instagram",
+              "en/informativos",
+              "en/tags"
+            ]
+          },
+          {
+            "group": "Management",
+            "pages": [
+              "en/usuarios-e-permissoes",
+              "en/avaliacoes",
+              "en/financeiro"
+            ]
+          },
+          {
+            "group": "Administration and system",
             "pages": [
               "en/conectar-whatsapp",
               "en/multbridge",
               "en/chatflow",
-              "en/atender-conversas",
-              "en/contatos",
-              "en/organizar-equipe",
-              "en/respostas-rapidas",
-              "en/agendamentos",
-              "en/kanban"
-            ]
-          },
-          {
-            "group": "Automation and campaigns",
-            "pages": [
-              "en/flow-builder",
-              "en/agentes-de-ia",
-              "en/campanhas"
-            ]
-          },
-          {
-            "group": "Administration",
-            "pages": [
-              "en/usuarios-e-permissoes",
-              "en/desempenho"
+              "en/configuracoes"
             ]
           },
           {

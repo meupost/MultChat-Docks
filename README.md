@@ -1,57 +1,90 @@
-# MultChat-Docks
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./logo/multchat-icon.png">
+    <img src="./logo/multchat.png" height="56" alt="MultChat">
+  </picture>
 
-Manual do MultChat em português para quem configura a operação ou atende clientes. Aprenda a conectar um canal, organizar a equipe e responder à primeira conversa.
+  <h1>Manual do MultChat</h1>
 
-[Primeiros passos](#primeiros-passos) · [Atendimento](#atendimento) · [Problemas comuns](#problemas-comuns) · [Sobre o manual](#sobre-o-manual)
+  <p>Tutoriais para configurar a operação, atender clientes, automatizar conversas e acompanhar resultados.</p>
 
-## Primeiros passos
+  <p>
+    <strong><a href="https://manual.multchat.net/">Abrir o manual</a></strong>
+    · <a href="https://manual.multchat.net/en">Read in English</a>
+    · <a href="#tutoriais">Ver tutoriais</a>
+    · <a href="#como-contribuir">Como contribuir</a>
+  </p>
+</div>
 
-Acesse o painel da sua empresa. Para configurar canais, filas e usuários, use uma conta com as permissões correspondentes. Os canais disponíveis dependem dos módulos liberados para a empresa.
+[![Página inicial do Manual do MultChat, com navegação lateral e atalhos para os primeiros tutoriais](./images/readme/manual.webp)](https://manual.multchat.net/)
 
-### Organize a equipe e as filas
+## Tutoriais
 
-1. Em **Departamentos**, selecione **Novo departamento** e crie os grupos de atendimento da sua equipe, como Comercial ou Suporte.
-2. Em **Usuários**, cadastre os atendentes ou abra o cadastro de quem já tem acesso.
-3. Confira o perfil e as filas de cada atendente. Peça a alguém da equipe para entrar e confirmar que consegue abrir **Atendimentos**.
+Se você está configurando o MultChat pela primeira vez, comece por **Primeiros passos** e **Departamentos**. Se já atende clientes, vá direto a **Atendimentos**. Cada guia está disponível em português e inglês.
 
-### Conecte o WhatsApp
+| Guia | O que você vai fazer | Acesso |
+| --- | --- | --- |
+| **Primeiros passos** | Preparar suas filas, conectar um número e testar o primeiro atendimento. | [PT](https://manual.multchat.net/primeiros-passos) · [EN](https://manual.multchat.net/en/primeiros-passos) |
+| **Departamentos** | Criar filas, adicionar atendentes e encaminhar conversas para a equipe certa. | [PT](https://manual.multchat.net/organizar-equipe) · [EN](https://manual.multchat.net/en/organizar-equipe) |
+| **Atendimentos** | Aceitar, responder, transferir e resolver uma conversa, também no celular. | [PT](https://manual.multchat.net/atender-conversas) · [EN](https://manual.multchat.net/en/atender-conversas) |
+| **Construtor de fluxo** | Montar um menu, coletar respostas e simular antes de vincular ao WhatsApp. | [PT](https://manual.multchat.net/flow-builder) · [EN](https://manual.multchat.net/en/flow-builder) |
+| **Agentes de IA** | Configurar uma credencial e uma equipe, alimentar a base, testar e ativar no fluxo. | [PT](https://manual.multchat.net/agentes-de-ia) · [EN](https://manual.multchat.net/en/agentes-de-ia) |
+| **MultBridge** | Vincular uma sessão ao número da API Oficial e testar as políticas de recebimento e envio. | [PT](https://manual.multchat.net/multbridge) · [EN](https://manual.multchat.net/en/multbridge) |
+| **ChatFlow** | Enviar um convite e continuar a conversa na web dentro do mesmo atendimento. | [PT](https://manual.multchat.net/chatflow) · [EN](https://manual.multchat.net/en/chatflow) |
+| **Kanban** | Acompanhar negócios por etapa, criar atividades e registrar ganhos e perdas. | [PT](https://manual.multchat.net/kanban) · [EN](https://manual.multchat.net/en/kanban) |
+| **Desempenho** | Conferir os indicadores de equipe, avaliações, Score IA e conversão. | [PT](https://manual.multchat.net/desempenho) · [EN](https://manual.multchat.net/en/desempenho) |
 
-1. Abra **Conexões** e selecione **Nova conexão**.
-2. Escolha o tipo de conexão habilitado para a empresa.
-   - **WhatsApp por QR Code**. No celular do número que será conectado, abra **Aparelhos conectados** no WhatsApp e escaneie o código exibido no MultChat.
-   - **WhatsApp API Oficial**. Selecione a opção oficial e siga as etapas que o MultChat mostrar para vincular o número da empresa.
-3. Abra os detalhes da conexão e confira o status. Revise as filas configuradas para o canal.
-4. De outro número, mande uma mensagem de teste para o WhatsApp conectado. Abra **Atendimentos** e confira se a conversa chegou à equipe esperada.
+O menu do portal acompanha as áreas do MultChat. As páginas marcadas como **em preparação** indicam onde os próximos guias entrarão.
 
-## Atendimento
+## Do GitHub ao manual
 
-### Aceite e responda a uma conversa
+```mermaid
+flowchart LR
+    Fonte["Guias em MDX<br/>Português e inglês"] --> GitHub["GitHub<br/>MultChat-Docks · main"]
+    Navegacao["docs.json<br/>Menu, idiomas e tema"] --> GitHub
+    GitHub --> Mintlify["Mintlify<br/>Compila e publica"]
+    Mintlify --> Manual["Manual do MultChat<br/>manual.multchat.net"]
 
-1. Abra **Atendimentos**.
-2. Localize a conversa pelo contato. Confira os filtros e a fila selecionada se ela não aparecer.
-3. Se a conversa estiver aguardando atendimento, selecione **Aceitar**.
-4. Leia o histórico, escreva no campo de mensagem e envie a resposta.
+    classDef publicacao fill:#116033,stroke:#24a85c,color:#fff,stroke-width:2px
+    class Manual publicacao
+```
 
-### Transfira uma conversa
+O [Mintlify](https://www.mintlify.com/) acompanha a branch `main`. Uma atualização chega ao domínio público após a compilação e a conclusão do deploy.
 
-Abra as ações da conversa e selecione **Transferir atendimento**. Escolha a fila ou o atendente de destino nas opções disponíveis e confirme.
+## Estrutura do repositório
 
-### Encerre uma conversa
-
-Quando a solicitação estiver resolvida, selecione **Resolver atendimento**. Se o MultChat solicitar informações sobre o encerramento, preencha os campos exibidos e confirme.
-
-## Problemas comuns
-
-| Situação | O que verificar |
+| Caminho | Conteúdo |
 | --- | --- |
-| O QR Code expirou. | Abra a conexão novamente e escaneie o código que estiver na tela pelo menu **Aparelhos conectados** do celular. |
-| O WhatsApp desconectou. | Abra **Conexões**, selecione o canal e confira o status. Em conexões por QR Code, use a opção de reconectar e faça o pareamento novamente se a tela solicitar. |
-| A mensagem de teste não apareceu. | Confira se foi enviada para o número correto, se a conexão está ativa e se os filtros de **Atendimentos** mostram a fila esperada. |
-| Uma opção não aparece no meu painel. | Peça ao administrador da empresa para verificar seu perfil, suas filas e os módulos habilitados. |
-| Não consigo responder pelo WhatsApp API Oficial. | Confira o aviso na conversa. Se a janela de atendimento estiver encerrada, selecione um modelo de mensagem aprovado para retomar o contato. |
+| [`docs.json`](./docs.json) | Configuração do portal, navegação por idioma, tema e marca. |
+| [`index.mdx`](./index.mdx) | Página inicial em português. Os guias em português ficam na raiz. |
+| [`en/`](./en/) | Página inicial e traduções em inglês, com os mesmos nomes de arquivo. |
+| [`images/`](./images/) | Imagens dos guias, organizadas por assunto. |
+| [`logo/`](./logo/) | Logo e ícone oficiais usados no manual. |
+| [`snippets/`](./snippets/) e [`style.css`](./style.css) | Componentes compartilhados e ajustes visuais do portal. |
 
-## Sobre o manual
+## Rode a prévia local
 
-Este repositório reúne os guias de uso do MultChat. O conteúdo é escrito em Markdown e será usado no portal de documentação do Mintlify.
+Com o Git e o Node.js instalados, clone o repositório e rode a CLI do Mintlify na pasta do projeto.
 
-Ao atualizar um guia, reproduza os passos no MultChat, use os nomes que aparecem nas telas e indique quando a ação depende de uma permissão ou de um tipo de conexão. Use dados fictícios nas capturas de tela e nos exemplos.
+```sh
+git clone https://github.com/meupost/MultChat-Docks.git
+cd MultChat-Docks
+npx --yes mint@4.3.94 dev
+```
+
+Abra o endereço indicado no terminal. Para validar a compilação e conferir os links e âncoras antes de propor mudanças, rode na mesma pasta.
+
+```sh
+npx --yes mint@4.3.94 validate
+npx --yes mint@4.3.94 broken-links --check-anchors
+```
+
+## Como contribuir
+
+1. Confira o passo a passo no MultChat. Use os nomes das telas e indique os módulos, as permissões e os canais necessários.
+2. Atualize o guia em português e seu correspondente em inglês. Se for uma página nova, adicione as duas rotas em [`docs.json`](./docs.json).
+3. Use dados fictícios em exemplos e imagens. Revise as imagens para retirar chaves, QR Codes ativos e dados de clientes.
+4. Confira a prévia em computador e celular, incluindo links, imagens e textos alternativos.
+5. Abra um pull request com o guia afetado e uma descrição do que mudou.
+
+Para sugerir uma correção, use **Sugerir edições** no rodapé do guia. Para relatar uma dúvida ou erro de documentação, use **Reportar problema** ou abra uma [issue no GitHub](https://github.com/meupost/MultChat-Docks/issues/new). Inclua o link da página e o passo que precisa de revisão.
